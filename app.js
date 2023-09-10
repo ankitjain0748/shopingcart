@@ -4,7 +4,9 @@ app.use(express.json())
 
 const apirouter=require('./router/api')
 
-
+app.get("/",(req,res)=>{
+    console.log("heelo world !!")
+})
 const mongoose = require('mongoose')
 mongoose.connect("mongodb://127.0.0.1:27017/shopingcartproject")
 
